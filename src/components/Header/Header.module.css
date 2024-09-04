@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  font-size: 24px;
+  height: 60px;
+  padding: 5px;
+  border-bottom: 2px solid rgba(214, 214, 214, 0.5);
+}
+
+.nav_inner {
+  display: flex;
+}
+
+.nav_inner li {
+  margin-right: 20px;
+}

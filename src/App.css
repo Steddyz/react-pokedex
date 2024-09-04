@@ -1,0 +1,17 @@
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
