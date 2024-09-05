@@ -1,7 +1,7 @@
 import React from "react";
 
 const RandomPokemon = () => {
-  return <div>RandomPokemon</div>;
+  return <div className="random">Рандомный покемон</div>;
 };
 
 export default RandomPokemon;

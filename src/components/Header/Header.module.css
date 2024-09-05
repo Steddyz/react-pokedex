@@ -4,16 +4,19 @@
   align-items: center;
   box-sizing: border-box;
 
-  font-size: 24px;
+  font-size: 18px;
   height: 60px;
   padding: 5px;
   border-bottom: 2px solid rgba(214, 214, 214, 0.5);
 }
 
-.nav_inner {
-  display: flex;
+.header__item {
+  margin-left: 20px;
+  color: #000;
 }
 
-.nav_inner li {
-  margin-right: 20px;
+.logo {
+  display: flex;
+  height: 50px;
+  cursor: pointer;
 }

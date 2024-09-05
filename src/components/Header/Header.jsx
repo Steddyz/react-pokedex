@@ -1,19 +1,25 @@
 import React from "react";
 
 import cl from "./Header.module.css";
+import LOGO from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={cl.header}>
       <div className={cl.logo}>
-        <img src="" alt="logo" />
+        <img src={LOGO} alt="logo" />
       </div>
       <div className={cl.nav}>
-        <ul className={cl.nav_inner}>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
+        <Link to="/" className={cl.header__item}>
+          Главная
+        </Link>
+        <Link to="/pokedex" className={cl.header__item}>
+          Покедекс
+        </Link>
+        <Link to="/about" className={cl.header__item}>
+          О нас
+        </Link>
       </div>
     </header>
   );

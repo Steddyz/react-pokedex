@@ -1,15 +1,21 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
+import MainPage from "./pages/MainPage/MainPage";
+import PokedexPage from "./pages/PokedexPage/PokedexPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
   return (
     <>
       <Header />
       <div>
-        <div>
-          <h1>POKEDEX</h1>
-        </div>
-        <div className="random">Рандомный покемон</div>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/pokedex" element={<PokedexPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<MainPage />} />
+        </Routes>
       </div>
     </>
   );
