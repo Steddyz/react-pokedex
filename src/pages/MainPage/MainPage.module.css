@@ -11,3 +11,8 @@
   margin-top: 10px;
   font-size: 1.5em;
 }
+
+hr {
+  display: flex;
+  max-width: 200px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 
 import cl from "./MainPage.module.css";
+import RandomPokemon from "../../components/Random/RandomPokemon";
 
 const MainPage = () => {
   return (
@@ -8,7 +9,12 @@ const MainPage = () => {
       <div>
         <h1>POKEDEX</h1>
       </div>
-      <div className={cl.random}>Рандомный покемон</div>
+      <hr />
+      <div className={cl.random}>
+        <div className={cl.random__wrapper}>
+          <RandomPokemon />
+        </div>
+      </div>
     </div>
   );
 };
