@@ -3,8 +3,6 @@ import axios from "axios";
 
 import cl from "./RandomPokemon.module.css";
 
-// https://pokeapi.co/api/v2/pokemon?offset=5&limit=1
-
 const RandomPokemon = () => {
   const [pokemon, setPokemon] = useState(null);
 
