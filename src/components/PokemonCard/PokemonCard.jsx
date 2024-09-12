@@ -11,7 +11,7 @@ const PokemonCard = () => {
   useEffect(() => {
     const allPokemons = async () => {
       const response = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon?offset=${page}?limit=20`
+        `https://pokeapi.co/api/v2/pokemon?offset=${page}`
       );
       const pokemonData = await Promise.all(
         response.data.results.map(async (pok) => {
@@ -27,9 +27,9 @@ const PokemonCard = () => {
     allPokemons();
   }, []);
   return (
-    <div>
+    <div className={cl.pokemonCard}>
       {pokemons.map((pok) => (
-        <div key={pok.id}>
+        <div className={cl.pokemonCard_wrapper} key={pok.name}>
           <img src={pok.img} alt={pok.name} />
           <div>{pok.name}</div>
         </div>
