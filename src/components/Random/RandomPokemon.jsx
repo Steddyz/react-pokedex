@@ -28,14 +28,14 @@ const RandomPokemon = () => {
       {pokemon ? (
         <p className={cl.title}>{pokemon.name}</p>
       ) : (
-        <div>Loading...</div>
+        <div>Загрузка...</div>
       )}
       {pokemon ? (
         <div className={cl.random__wrapper}>
           <img src={pokemon.sprites.front_default} />
         </div>
       ) : (
-        <div>Loading</div>
+        <div>Загрузкаю...</div>
       )}
 
       <p>Рандомный покемон</p>

@@ -5,6 +5,7 @@ import cl from "./PokemonCard.module.css";
 
 const PokemonCard = () => {
   const [pokemons, setPokemons] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   let page = 0;
 
@@ -23,17 +24,24 @@ const PokemonCard = () => {
         })
       );
       setPokemons(pokemonData);
+      setLoading(false);
     };
     allPokemons();
   }, []);
   return (
-    <div className={cl.pokemonCard}>
-      {pokemons.map((pok) => (
-        <div className={cl.pokemonCard_wrapper} key={pok.name}>
-          <img src={pok.img} alt={pok.name} />
-          <div>{pok.name}</div>
+    <div className={cl.pokemonList}>
+      {loading ? (
+        <div className={cl.loading}>Загрузка...</div>
+      ) : (
+        <div className={cl.pokemonCard}>
+          {pokemons.map((pok) => (
+            <div className={cl.pokemonCard_wrapper} key={pok.name}>
+              <img src={pok.img} alt={pok.name} />
+              <div>{pok.name}</div>
+            </div>
+          ))}
         </div>
-      ))}
+      )}
     </div>
   );
 };

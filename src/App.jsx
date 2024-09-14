@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import MainPage from "./pages/MainPage/MainPage";
 import PokedexPage from "./pages/PokedexPage/PokedexPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="*" element={<MainPage />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

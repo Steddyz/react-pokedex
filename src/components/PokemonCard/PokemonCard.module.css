@@ -13,3 +13,7 @@
   height: 200px;
   flex: 0 1 auto;
 }
+
+.loading {
+  margin-top: 100px;
+}
