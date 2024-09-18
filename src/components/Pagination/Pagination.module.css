@@ -6,6 +6,7 @@
 }
 
 .pagination_inner {
+  user-select: none;
   color: #c5c5c5;
   width: 500px;
   border: 1px solid #c5c5c5;
@@ -17,4 +18,8 @@
   font-size: 28px;
   padding: 10px;
   cursor: pointer;
+}
+
+button {
+  all: unset;
 }

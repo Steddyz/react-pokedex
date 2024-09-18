@@ -3,14 +3,13 @@ import axios from "axios";
 
 import cl from "./PokemonCard.module.css";
 
-const PokemonCard = () => {
+const PokemonCard = ({ page }) => {
   const [pokemons, setPokemons] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  let page = 0;
-
   useEffect(() => {
     const allPokemons = async () => {
+      setLoading(true);
       const response = await axios.get(
         `https://pokeapi.co/api/v2/pokemon?offset=${page}`
       );
@@ -27,7 +26,7 @@ const PokemonCard = () => {
       setLoading(false);
     };
     allPokemons();
-  }, []);
+  }, [page]);
   return (
     <div className={cl.pokemonList}>
       {loading ? (

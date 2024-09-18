@@ -12,7 +12,7 @@ const Footer = () => {
           <FaGithub />
         </a>
       </div>
-      <div>zxc</div>
+      <div>About</div>
     </div>
   );
 };
