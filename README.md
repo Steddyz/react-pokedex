@@ -1,6 +1,6 @@
 # React + Vite
 
-[DEMO](https://react-pokedex-seven-pink.vercel.app)
+[DEMO PROJECT](https://react-pokedex-seven-pink.vercel.app)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
