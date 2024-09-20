@@ -7,12 +7,13 @@ import Pagination from "../../components/Pagination/Pagination";
 
 const PokedexPage = () => {
   const [page, setPage] = useState(0);
+  const [search, setSearch] = useState("");
 
   return (
     <div className={cl.pokedex}>
-      <Form />
+      <Form onSearch={setSearch} />
       <Pagination onPageChange={setPage} />
-      <PokemonCard page={page} />
+      <PokemonCard page={page} search={search} />
     </div>
   );
 };
