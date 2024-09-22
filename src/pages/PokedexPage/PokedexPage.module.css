@@ -1,3 +1,7 @@
+/* PokedexPage.module.css */
 .pokedex {
-  height: 100vh;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column; /* Убедитесь, что содержимое располагается вертикально */
+  justify-content: flex-start; /* Выравнивание содержимого в верхней части */
 }
