@@ -45,3 +45,12 @@
     height: 29px;
   }
 }
+
+@media (max-width: 320px) {
+  .nav {
+    font-size: 12px;
+  }
+  .logo {
+    height: 20px;
+  }
+}
